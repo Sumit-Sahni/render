@@ -13,7 +13,9 @@ const app = express();
 //         res.status(500).send(err.message)
 //      }
 // });
-
+app.get("/", (req, res)=>{
+    res.send("Welcome")
+})
 app.listen(PORT, ()=>{
     console.log(`Server listening on port ${PORT}`);
 })
